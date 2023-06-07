@@ -1,0 +1,74 @@
+:root {
+  --background-color: #a04955;
+  --primary-font-family: "Oswald";
+  --secondary-font-family: "Open Sans";
+  --headings-color: #001f3d;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 60px;
+}
+
+.menu {
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu-item a {
+  text-decoration: none;
+  font: var(--primary-font-family);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.header .menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header .menu-item {
+  display: inline;
+  padding: 0 15px;
+}
+
+.header .menu-item a {
+  color: #333333;
+}
+
+.search {
+  border: 1px solid var(--background-color);
+  border-radius: 20px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search input {
+  border: none;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.search input::placeholder {
+  font-size: 0.7em;
+}
+
+.search button {
+  border: none;
+  background-color: white;
+}
+
+.search .search-icon {
+  color: var(--background-color);
+}
