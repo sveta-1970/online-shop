@@ -5,6 +5,20 @@
   --headings-color: #001f3d;
 }
 
+h1,
+h2,
+.discounts h3,
+.shirt h3,
+h4,
+.header .menu-item a,
+.button {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
 }
@@ -22,10 +36,9 @@ img {
 }
 
 .menu-item a {
-  text-decoration: none;
-  font: var(--primary-font-family);
   font-size: 20px;
   font-weight: 400;
+  font: var(--primary-font-family);
 }
 
 .header .menu {
@@ -62,6 +75,7 @@ img {
 
 .search input::placeholder {
   font-size: 0.7em;
+  text-transform: uppercase;
 }
 
 .search button {
@@ -71,4 +85,48 @@ img {
 
 .search .search-icon {
   color: var(--background-color);
+}
+
+.footer {
+  background-color: var(--background-color);
+  color: white;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 60px;
+  gap: 42px;
+  align-items: flex-start;
+}
+
+.footer a {
+  color: white;
+  line-height: 1.7rem;
+}
+
+.footer .subscribe {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.footer .subscribe > input {
+  border: none;
+  height: 61px;
+}
+
+.footer .subscribe > input:focus {
+  outline: none;
+}
+
+.footer .subscribe > input::placeholder {
+  text-transform: uppercase;
+  color: var(--background-color);
+  padding-left: 8px;
+}
+
+.footer .button {
+  margin: 8px;
+  padding: 0 25px;
+  line-height: 45px;
+  background-color: var(--background-color);
 }
