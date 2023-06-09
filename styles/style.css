@@ -3,6 +3,35 @@
   --primary-font-family: "Oswald";
   --secondary-font-family: "Open Sans";
   --headings-color: #001f3d;
+  --accent-color: #f3f3f3;
+  --button-border: 1px solid black;
+}
+
+h1,
+h4 {
+  font-family: var(--primary-font-family);
+  color: var(--headings-color);
+}
+
+h2,
+h3 {
+  font-family: var(--primary-font-family);
+  color: #333333;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 65px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 64px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 36px;
 }
 
 h1,
@@ -11,8 +40,21 @@ h2,
 .shirt h3,
 h4,
 .header .menu-item a,
-.button {
+a.button {
   text-transform: uppercase;
+}
+
+p,
+a.button {
+  font-family: var(--secondary-font-family);
+  font-weight: 300;
+  font-size: 24px;
+}
+
+a.button {
+  border: var(--button-border);
+  padding: 10px 15px;
+  color: black;
 }
 
 a {
@@ -27,6 +69,12 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.container.header,
+.container.shorts,
+.container.pants,
+.container.about {
   margin: 30px 60px;
 }
 
@@ -89,29 +137,37 @@ img {
 
 .footer {
   background-color: var(--background-color);
-  color: white;
-  margin-left: 0;
-  margin-right: 0;
   padding: 0 60px;
   gap: 42px;
   align-items: flex-start;
 }
 
-.footer a {
+.footer h4 {
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.footer a,
+.footer p {
   color: white;
   line-height: 1.7rem;
+  font-family: var(--primary-font-family);
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .footer .subscribe {
-  background-color: white;
+  background-color: var(--accent-color);
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
 }
 
 .footer .subscribe > input {
   border: none;
   height: 61px;
+  background: var(--accent-color);
 }
 
 .footer .subscribe > input:focus {
@@ -121,7 +177,8 @@ img {
 .footer .subscribe > input::placeholder {
   text-transform: uppercase;
   color: var(--background-color);
-  padding-left: 8px;
+  padding-left: 25px;
+  font-family: var(--primary-font-family);
 }
 
 .footer .button {
@@ -129,4 +186,12 @@ img {
   padding: 0 25px;
   line-height: 45px;
   background-color: var(--background-color);
+  font-family: var(--primary-font-family);
+}
+
+sub.copywrite {
+  margin-left: 60px;
+  font-family: var(--primary-font-family);
+  font-weight: 400;
+  font-size: 14px;
 }
