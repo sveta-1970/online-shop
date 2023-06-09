@@ -86,7 +86,7 @@ img {
 .menu-item a {
   font-size: 20px;
   font-weight: 400;
-  font: var(--primary-font-family);
+  font-family: var(--primary-font-family);
 }
 
 .header .menu {
@@ -133,6 +133,79 @@ img {
 
 .search .search-icon {
   color: var(--background-color);
+}
+
+.discounts {
+  background-color: var(--accent-color);
+  text-align: center;
+  padding: 80px 0;
+  margin: 60px 0;
+}
+
+.discounts .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  margin: 0 43px;
+  font-family: var(--primary-font-family);
+}
+
+.discounts .card {
+  background-color: white;
+  width: 280px;
+  height: 416px;
+  padding: 30px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.discounts h5 {
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0;
+}
+
+.discounts .stars {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.discounts .card p {
+  text-align: center;
+  font-family: var(--primary-font-family);
+  font-size: 18px;
+  margin: 0;
+}
+
+.discounts .card span {
+  font-weight: 600;
+}
+
+.discounts .card p::before {
+  content: "As low as ";
+  font-size: 18px;
+}
+
+.discounts button {
+  display: block;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: white;
+  background-color: var(--background-color);
+  border: none;
+  line-height: 40px;
+  margin: 20px auto;
+}
+
+.discounts button::before {
+  content: url("../images/homepage_images/shopping-bag\ 1.png");
+  position: relative;
+  left: 0;
+  top: 10px;
 }
 
 .footer {
