@@ -208,6 +208,31 @@ img {
   top: 10px;
 }
 
+.container.shirt {
+  background-color: var(--accent-color);
+  text-align: center;
+}
+
+.container.shirt-desc {
+  margin: 107px 152px;
+  gap: 36px;
+}
+
+.new-discount img {
+  max-width: 100%;
+}
+
+.new-discount h3 {
+  color: white;
+  background: rgb(160, 73, 85, 0.8);
+  height: 86px;
+  line-height: 80px;
+  margin: 0;
+  position: relative;
+  top: -80px;
+  max-width: 100%;
+}
+
 .footer {
   background-color: var(--background-color);
   padding: 0 60px;
