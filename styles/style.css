@@ -86,11 +86,13 @@ img {
   align-items: center;
 }
 
-.container.header,
+.container.header {
+  margin: 30px 60px;
+}
 .container.shorts,
 .container.pants,
 .container.about {
-  margin: 30px 60px;
+  margin: 90px 60px;
 }
 
 .menu {
@@ -150,9 +152,14 @@ img {
   color: var(--background-color);
 }
 
-.col {
-  max-width: 100%;
-  padding: 0 5px;
+.shorts,
+.pants {
+  gap: 36px;
+}
+
+.shorts .col,
+.pants .col {
+  width: 600px;
 }
 
 .discounts {
