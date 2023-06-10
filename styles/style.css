@@ -228,11 +228,16 @@ img {
 }
 
 .container.shirt-desc {
-  margin: 107px 152px 0 152px;
+  margin: 107px 152px;
   gap: 36px;
 }
 
-.new-discount img {
+.new-discount {
+  position: relative;
+  display: inline-block;
+}
+
+.new-discount image {
   max-width: 100%;
 }
 
@@ -242,18 +247,15 @@ img {
   height: 86px;
   line-height: 80px;
   margin: 0;
+  position: absolute;
+  bottom: 237px;
+  width: 100%;
 }
 
 .new-discount .button {
   display: block;
   width: 366px;
   margin: 0 auto;
-}
-
-.relative {
-  position: relative;
-  top: -87px;
-  max-width: 100%;
 }
 
 .sportif-pants-image {
