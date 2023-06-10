@@ -89,10 +89,20 @@ img {
 .container.header {
   margin: 30px 60px;
 }
+
 .container.shorts,
-.container.pants,
-.container.about {
+.container.pants {
   margin: 90px 60px;
+}
+
+.container.about .image {
+  position: relative;
+  left: 518px;
+  top: 116px;
+}
+
+.container.about-us {
+  margin: 0 60px;
 }
 
 .menu {
@@ -293,6 +303,17 @@ img {
   background-color: var(--background-color);
   border: none;
   margin-top: 10px;
+}
+
+.container.about {
+  position: relative;
+  display: inline-block;
+}
+
+.container.about-us {
+  background-color: var(--accent-color);
+  flex-direction: column;
+  padding: 130px 90px 43px 90px;
 }
 
 .footer {
