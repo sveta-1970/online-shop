@@ -22,7 +22,7 @@ h3 {
 h1 {
   font-weight: 700;
   font-size: 65px;
-  line-height: 96px;
+  line-height: 86px;
   margin: 0;
 }
 
@@ -150,6 +150,11 @@ img {
   color: var(--background-color);
 }
 
+.col {
+  max-width: 100%;
+  padding: 0 5px;
+}
+
 .discounts {
   background-color: var(--accent-color);
   text-align: center;
@@ -251,15 +256,17 @@ img {
   max-width: 100%;
 }
 
-.container.sportif-pants-image {
-  flex-direction: column;
+.sportif-pants-image {
+  position: relative;
+  display: inline-block;
 }
 
 .sportif-pants {
-  position: relative;
+  position: absolute;
+  bottom: 0;
   width: 38%;
-  left: -280px;
-  top: -492px;
+  left: 80px;
+  bottom: 60px;
 }
 
 .sportif-pants h1,
@@ -270,6 +277,7 @@ img {
 
 .sportif-pants p {
   margin: 0;
+  margin-bottom: 22px;
 }
 
 .sportif-pants .button {
