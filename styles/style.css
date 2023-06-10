@@ -170,6 +170,10 @@ img {
 .shorts .col,
 .pants .col {
   width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .discounts {
