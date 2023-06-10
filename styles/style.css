@@ -34,6 +34,18 @@ h3 {
   font-size: 36px;
 }
 
+h4 {
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0;
+}
+
 h1,
 h2,
 .discounts h3,
@@ -162,12 +174,6 @@ img {
   align-items: center;
 }
 
-.discounts h5 {
-  font-weight: 500;
-  font-size: 24px;
-  margin: 0;
-}
-
 .discounts .stars {
   display: flex;
   flex-wrap: nowrap;
@@ -214,7 +220,7 @@ img {
 }
 
 .container.shirt-desc {
-  margin: 107px 152px;
+  margin: 107px 152px 0 152px;
   gap: 36px;
 }
 
@@ -228,8 +234,17 @@ img {
   height: 86px;
   line-height: 80px;
   margin: 0;
+}
+
+.new-discount .button {
+  display: block;
+  width: 366px;
+  margin: 0 auto;
+}
+
+.relative {
   position: relative;
-  top: -80px;
+  top: -87px;
   max-width: 100%;
 }
 
@@ -238,12 +253,6 @@ img {
   padding: 0 60px;
   gap: 42px;
   align-items: flex-start;
-}
-
-.footer h4 {
-  color: white;
-  font-weight: 600;
-  font-size: 24px;
 }
 
 .footer a,
