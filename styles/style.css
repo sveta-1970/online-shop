@@ -22,6 +22,8 @@ h3 {
 h1 {
   font-weight: 700;
   font-size: 65px;
+  line-height: 96px;
+  margin: 0;
 }
 
 h2 {
@@ -61,6 +63,7 @@ a.button {
   font-family: var(--secondary-font-family);
   font-weight: 300;
   font-size: 24px;
+  line-height: 33px;
 }
 
 a.button {
@@ -248,6 +251,33 @@ img {
   max-width: 100%;
 }
 
+.container.sportif-pants-image {
+  flex-direction: column;
+}
+
+.sportif-pants {
+  position: relative;
+  width: 38%;
+  left: -280px;
+  top: -492px;
+}
+
+.sportif-pants h1,
+.sportif-pants p,
+.sportif-pants .button {
+  color: white;
+}
+
+.sportif-pants p {
+  margin: 0;
+}
+
+.sportif-pants .button {
+  background-color: var(--background-color);
+  border: none;
+  margin-top: 10px;
+}
+
 .footer {
   background-color: var(--background-color);
   padding: 0 60px;
@@ -262,6 +292,10 @@ img {
   font-family: var(--primary-font-family);
   font-weight: 400;
   font-size: 18px;
+}
+
+.footer .get-to-know-us {
+  width: 40%;
 }
 
 .footer .subscribe {
