@@ -370,7 +370,7 @@ img {
   padding: 130px 90px 43px 90px;
 }
 
-.arrow {
+.arrow-up {
   border-radius: 50%;
   color: white;
   background-color: var(--background-color);
@@ -378,8 +378,7 @@ img {
   height: 83px;
   position: fixed;
   right: 25px;
-  bottom: 340px;
-  z-index: 1;
+  bottom: 140px;
   text-align: center;
   line-height: 100px;
 }
