@@ -96,12 +96,12 @@ img {
   margin: 90px 60px;
 }
 
-.container.trend{
+.container.trend {
   margin-bottom: 100px;
 }
 
 .container.about-us {
-  margin: 0 60px;
+  margin: 0 60px 46px 60px;
 }
 
 .menu {
@@ -368,6 +368,20 @@ img {
   background-color: var(--accent-color);
   flex-direction: column;
   padding: 130px 90px 43px 90px;
+}
+
+.arrow {
+  border-radius: 50%;
+  color: white;
+  background-color: var(--background-color);
+  width: 83px;
+  height: 83px;
+  position: fixed;
+  right: 25px;
+  bottom: 340px;
+  z-index: 1;
+  text-align: center;
+  line-height: 100px;
 }
 
 .footer {
