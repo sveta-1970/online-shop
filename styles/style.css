@@ -14,7 +14,8 @@ h4 {
 }
 
 h2,
-h3 {
+h3,
+h5 {
   font-family: var(--primary-font-family);
   color: #333333;
 }
@@ -95,10 +96,8 @@ img {
   margin: 90px 60px;
 }
 
-.container.about .image {
-  position: relative;
-  left: 518px;
-  top: 116px;
+.container.trend{
+  margin-bottom: 100px;
 }
 
 .container.about-us {
@@ -309,9 +308,60 @@ img {
   margin-top: 10px;
 }
 
+.sportif-trend {
+  margin: 90px 60px 0 60px;
+  width: 100%;
+  position: relative;
+}
+
+.sportif-trend h1 {
+  color: white;
+  background-color: var(--background-color);
+  padding: 30px 0 200px 0;
+  text-align: center;
+}
+
+.sportif-items {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  bottom: 155px;
+}
+
+.sportif-item {
+  border: 1px solid var(--background-color);
+  width: 280px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.sportif-item h5 {
+  margin: 20px;
+}
+
+.sportif-item .button {
+  font-size: 18px;
+  color: white;
+  background-color: var(--background-color);
+  border: none;
+  width: 240px;
+}
+
 .container.about {
   position: relative;
   display: inline-block;
+}
+
+.container.about .image {
+  position: absolute;
+  left: 488px;
+  top: -167px;
 }
 
 .container.about-us {
