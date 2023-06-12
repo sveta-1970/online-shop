@@ -441,3 +441,151 @@ sub.copywrite {
   font-weight: 400;
   font-size: 14px;
 }
+
+@media (min-width: 1440px) {
+  .wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    background-color: var(--accent-color);
+  }
+}
+
+@media (max-width: 1248px) {
+  .sportif-pants {
+    width: 50%;
+  }
+  .sportif-pants h1 {
+    font-size: 55px;
+    line-height: 75px;
+  }
+
+  .new-discount h3 {
+    position: relative;
+    bottom: initial;
+  }
+  .new-discount p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1100px) {
+  h1 {
+    font-size: 45px;
+    line-height: 65px;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  p,
+  a.button {
+    font-size: 18px;
+  }
+
+  .discounts .cards {
+    flex-direction: column;
+  }
+
+  .card button {
+    font-size: 14px;
+  }
+
+  .new-discount a.button {
+    width: 250px;
+  }
+
+  .sportif-pants {
+    width: 80%;
+  }
+
+  .sportif-items {
+    bottom: initial;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .sportif-trend h1 {
+    padding: 30px 0;
+    margin-bottom: 30px;
+  }
+
+  .container.about .image {
+    display: none;
+  }
+  .container.about-us {
+    padding-top: 43px;
+  }
+
+  .container.footer {
+    flex-wrap: wrap;
+  }
+  .container.footer .get-to-know-us {
+    width: 600px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 890px) {
+  .container.header a.logo img {
+    display: none;
+  }
+
+  .image.col {
+    width: 50%;
+  }
+
+  .container.shorts {
+    flex-direction: column-reverse;
+  }
+
+  .container.shirt-desc {
+    flex-direction: column;
+  }
+
+  .container.shirt-desc .new-discount {
+    display: block;
+    position: static;
+    width: 80%;
+  }
+
+  .container.pants {
+    flex-direction: column;
+  }
+
+  .container.sportif-pants-image img {
+    display: none;
+  }
+  .sportif-pants {
+    position: relative;
+    bottom: initial;
+    margin-top: 20px;
+  }
+
+  .sportif-pants h1 {
+    color: var(--headings-color);
+  }
+
+  .sportif-pants p {
+    color: black;
+  }
+
+  .sportif-pants a.button {
+    border: var(--button-border);
+    color: black;
+    background-color: white;
+  }
+}
