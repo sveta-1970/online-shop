@@ -152,11 +152,13 @@ img {
 .submenu-filter {
   gap: 12px;
   width: 315px;
+  margin-right: 60px;
 }
 
 .general-container {
   display: flex;
   background-color: var(--accent-color);
+  padding: 20px 60px 80px 60px;
 }
 
 .aside-container {
@@ -165,26 +167,26 @@ img {
   justify-content: flex-start;
   width: 315px;
   height: 300px;
+  margin-right: 20px;
   background-color: white;
-  margin-left: 60px;
   border: 1px solid var(--background-color);
 }
 
 .cards {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
-  gap: 10px;
+  gap: 20px;
   font-family: var(--primary-font-family);
 }
 
 .card {
   background-color: white;
-  width: 20%;
+  width: 25%;
   height: 416px;
-  padding: 30px 45px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
