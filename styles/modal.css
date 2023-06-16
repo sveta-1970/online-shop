@@ -1,0 +1,163 @@
+:root {
+  --background-color: #a04955;
+  --primary-font-family: "Oswald";
+  --secondary-font-family: "Open Sans";
+  --accent-color: #f3f3f3;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.modal {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--primary-font-family);
+  background-color: white;
+  width: 1100px;
+  padding: 311px 60px 80px 60px;
+}
+
+.subnail {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.main-image {
+  width: 469px;
+  height: 469px;
+}
+
+.subnail-image {
+  width: 140px;
+  height: 140px;
+  padding: 30px;
+  border: 1px solid black;
+}
+
+.modal-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.modal span {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.modal .stars {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-bottom: 38px;
+}
+
+.modal .stars > span {
+  text-transform: uppercase;
+  margin-left: 20px;
+  line-height: 22px;
+}
+.modal p {
+  font-family: var(--primary-font-family);
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+}
+
+.modal .price {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.list.color {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  gap: 17px;
+}
+
+.list.color div {
+  width: 40px;
+  height: 40px;
+}
+
+div.black {
+  background: black;
+}
+
+div.brown {
+  background-color: brown;
+}
+
+div.blue {
+  background-color: blue;
+}
+
+div.green {
+  background-color: green;
+}
+
+div.grey {
+  background-color: grey;
+}
+
+div.orange {
+  background-color: orange;
+}
+
+div.white {
+  background-color: white;
+  border: 1px solid var(--accent-color);
+}
+
+.list.size {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  gap: 17px;
+}
+
+.list.size div {
+  width: 40px;
+  height: 40px;
+  line-height: 34px;
+  padding: 2px;
+  background-color: var(--accent-color);
+}
+
+.modal button {
+  display: block;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: white;
+  background-color: var(--background-color);
+  border: none;
+  line-height: 40px;
+  margin: 20px auto;
+}
+
+.modal button::before {
+  content: url("../images/homepage_images/shopping-bag\ 1.png");
+  position: relative;
+  left: 0;
+  top: 10px;
+}
