@@ -166,16 +166,104 @@ img {
   flex-direction: column;
   justify-content: flex-start;
   width: 315px;
-  height: 300px;
+  max-height: fit-content;
   margin-right: 20px;
+  padding: 20px;
   background-color: white;
   border: 1px solid var(--background-color);
+}
+
+.line {
+  border-bottom: 1px solid var(--background-color);
+  margin-bottom: 20px;
+}
+
+.aside-container .section-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside-container img {
+  display: block;
+  width: 20px;
+  height: 12px;
+}
+
+.dropdownlist {
+  font-size: 20px;
+  line-height: 36px;
+  font-family: var(--primary-font-family);
+  font-weight: 300px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.dropdownlist.size,
+.dropdownlist.color {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  gap: 17px;
+}
+
+.dropdownlist.size div {
+  width: 40px;
+  height: 40px;
+  padding: 2px;
+  background-color: var(--accent-color);
+}
+
+.dropdownlist.color div {
+  width: 40px;
+  height: 40px;
+}
+
+div.black {
+  background: black;
+}
+
+div.brown {
+  background-color: brown;
+}
+
+div.blue {
+  background-color: blue;
+}
+
+div.green {
+  background-color: green;
+}
+
+div.grey {
+  background-color: grey;
+}
+
+div.orange {
+  background-color: orange;
+}
+
+div.white {
+  background-color: white;
+  border: 1px solid var(--accent-color);
+}
+
+.product .section-header {
+  justify-content: flex-end;
+}
+
+div.checkbox {
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  margin: 30px 0;
 }
 
 .cards {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   text-align: center;
   gap: 20px;
@@ -186,11 +274,12 @@ img {
   background-color: white;
   width: 25%;
   height: 416px;
-  padding: 10px;
+  padding: 10px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card .stars {
