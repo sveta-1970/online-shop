@@ -5,6 +5,10 @@
   --accent-color: #f3f3f3;
 }
 
+header {
+  background-color: white;
+}
+
 h1 {
   font-family: var(--primary-font-family);
   color: #c4c4c4;
@@ -72,10 +76,6 @@ a.button {
 
 a {
   text-decoration: none;
-}
-
-img {
-  max-width: 100%;
 }
 
 .container {
@@ -166,7 +166,7 @@ img {
   flex-direction: column;
   justify-content: flex-start;
   width: 315px;
-  max-height: fit-content;
+  height: 100%;
   margin-right: 20px;
   padding: 20px;
   background-color: white;
@@ -280,6 +280,11 @@ div.checkbox {
   justify-content: space-around;
   align-items: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card .product_image {
+  width: 165px;
+  height: 165px;
 }
 
 .card .stars {
