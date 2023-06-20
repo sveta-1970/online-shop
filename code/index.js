@@ -18,7 +18,7 @@ data.forEach((obj) => {
                   src="${obj.image2}"
                   alt="${obj.type}"
                 />
-                <h5>${obj.description}</h4>
+                <h5>${obj.description}</h5>
                 <div class="stars">
                   <img src="./images/homepage_images/Star 1.png" alt="star" />
                   <img src="./images/homepage_images/Star 1.png" alt="star" />
@@ -26,7 +26,7 @@ data.forEach((obj) => {
                   <img src="./images/homepage_images/Star 1.png" alt="star" />
                   <img src="./images/homepage_images/Star 1.png" alt="star" />
                 </div>
-                <p><span>${obj.price} hrv</span></p>
+                <p><span class="catalog_price">${obj.price} hrv</span></p>
                 <button>Add to cart</button>
               </div>`;
 
@@ -44,7 +44,7 @@ data.forEach((obj) => {
 const sorted = products.toSorted();
 sorted.forEach((el) => {
   document.getElementsByClassName(
-    ".dropdownlist.product div.checkbox"
+    ".dropdownlist.product .checkbox"
   ).innerHTML = `${sorted[el]}`;
 });
 
@@ -54,10 +54,22 @@ function showModal() {
   const main_image = document.getElementsByClassName("main-image");
   main_image = document.getElementsByClassName("product_image");
   
-  //миниатюрне зображення
+  //мініатюрне зображення
   const subnail_image = document.getElementsByClassName("subnail-image");
   subnail_image = main_image.classList.add("subnail-image");
   main_image.classList.remove("subnail-image");
+//!!!!потрібно добавити функцію, що змінює основне зображення при кліку на друге мініатюрне зображення
+
+//заголовок
+document.getElementById("title") = document.getElementsByTagName(".card > h5");
+
+//ціна
+const obj_price = document.getElementsByClassName("catalog_price");
+document.getElementsByClassName("price").innerHTML = `<p><span>${obj_price} hrv</span></p>`;
+
+//колір
+
+//розмір
 
 
 }
