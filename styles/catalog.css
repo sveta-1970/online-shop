@@ -286,6 +286,16 @@ div.checkbox {
 .card .product_image {
   width: 165px;
   height: 165px;
+  z-index: 1;
+}
+
+.card .product_image2 {
+  width: 165px;
+  height: 165px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
 }
 
 .card .stars {

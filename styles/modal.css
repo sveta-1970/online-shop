@@ -37,6 +37,12 @@ h3 {
   border: 1px solid black;
 }
 
+.modal-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .subnail {
   display: flex;
   gap: 20px;
@@ -48,13 +54,20 @@ h3 {
 .main-image {
   width: 469px;
   height: 469px;
+  margin: 0 auto;
 }
 
 .subnail-image {
-  width: 140px;
-  height: 140px;
+  width: 20%;
   padding: 30px;
   border: 1px solid black;
+  position: static;
+  visibility: visible;
+}
+
+.subnail-image .image2 {
+  position: static;
+  visibility: visible;
 }
 
 .modal-description {
