@@ -437,8 +437,8 @@ const data = [
     color: ["green"],
     price: 949,
     rating: 5,
-    image1: "https://content1.rozetka.com.ua/goods/images/big/273681394.jpg",
-    image2: "https://content.rozetka.com.ua/goods/images/big/273681412.jpg",
+    image1: "https://content2.rozetka.com.ua/goods/images/big/351235352.jpg",
+    image2: "https://content.rozetka.com.ua/goods/images/big/351235353.jpg",
   },
 
   {

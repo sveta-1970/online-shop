@@ -4,9 +4,18 @@ if (!Array.isArray(data)) {
   throw new Error(`Ми отримали щось інше...`);
 }
 
-//вивід інфо на карточки на сторінці catalog
 
-data.forEach((obj) => {
+//вивід інфо на карточки на сторінці catalog
+  const page = document.getElementById("catalog-cards");
+  let page_number = 0;
+  page_number = document.querySelector(".pagination");
+  const links = document.querySelectorAll(".pagination_button"),
+    active_link_1 = document.querySelector("#page_one"),
+    active_link_2 = document.querySelector("#page_two"),
+    active_link_3 = document.querySelector("#page_three"),
+    active_link_4 = document.querySelector("#page_four");
+
+data.forEach((obj, i) => {
   const card = `<div class="card">
                 <img
                   class="product_image"
@@ -29,9 +38,156 @@ data.forEach((obj) => {
                 <p><span class="catalog_price">${obj.price} hrv</span></p>
                 <button>Add to cart</button>
               </div>`;
-
-  document.getElementById("catalog-cards").innerHTML += card;
+if (i >= 0 && i < 10){
+  page.insertAdjacentHTML("beforeend", card);
+}
+  //document.getElementById("catalog-cards").innerHTML += card;
 });
+
+//pagination for 4 pages
+page_number.addEventListener("click", (e) => {
+    switch (e.target.innerText) {
+      case "1":
+        page.innerHTML = ""; //clear previously shown objects
+        links.forEach((link) => {
+          link.classList.remove("active");
+        });
+        active_link_1.classList.add("active");
+        data.forEach((obj, i) => {
+          const card = `<div class="card">
+                <img
+                  class="product_image"
+                  src="${obj.image1}"
+                  alt="${obj.type}"
+                />
+                <img
+                  class="product_image2"
+                  src="${obj.image2}"
+                  alt="${obj.type}"
+                />
+                <h5>${obj.description}</h5>
+                <div class="stars">
+                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                </div>
+                <p><span class="catalog_price">${obj.price} hrv</span></p>
+                <button>Add to cart</button>
+              </div>`;
+          if (i >= 0 && i < 10) {
+            page.insertAdjacentHTML("beforeend", card);
+          }
+        });
+        break;
+      case "2":
+        page.innerHTML = "";
+        links.forEach((link) => {
+          link.classList.remove("active");
+        });
+        active_link_2.classList.add("active");
+        data.forEach((obj, i) => {
+          const card = `<div class="card">
+                <img
+                  class="product_image"
+                  src="${obj.image1}"
+                  alt="${obj.type}"
+                />
+                <img
+                  class="product_image2"
+                  src="${obj.image2}"
+                  alt="${obj.type}"
+                />
+                <h5>${obj.description}</h5>
+                <div class="stars">
+                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                </div>
+                <p><span class="catalog_price">${obj.price} hrv</span></p>
+                <button>Add to cart</button>
+              </div>`;
+          if (i >= 10 && i < 20) {
+            page.insertAdjacentHTML("beforeend", card);
+          }
+        });
+        break;
+      case "3":
+        page.innerHTML = "";
+        links.forEach((link) => {
+          link.classList.remove("active");
+        });
+        active_link_3.classList.add("active");
+        data.forEach((obj, i) => {
+          const card = `<div class="card">
+                <img
+                  class="product_image"
+                  src="${obj.image1}"
+                  alt="${obj.type}"
+                />
+                <img
+                  class="product_image2"
+                  src="${obj.image2}"
+                  alt="${obj.type}"
+                />
+                <h5>${obj.description}</h5>
+                <div class="stars">
+                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                </div>
+                <p><span class="catalog_price">${obj.price} hrv</span></p>
+                <button>Add to cart</button>
+              </div>`;
+          if (i >= 20 && i < 30) {
+            page.insertAdjacentHTML("beforeend", card);
+          }
+        });
+        break;
+      case "4":
+        page.innerHTML = "";
+        links.forEach((link) => {
+          link.classList.remove("active");
+        });
+        active_link_4.classList.add("active");
+        data.forEach((obj, i) => {
+          const card = `<div class="card">
+                <img
+                  class="product_image"
+                  src="${obj.image1}"
+                  alt="${obj.type}"
+                />
+                <img
+                  class="product_image2"
+                  src="${obj.image2}"
+                  alt="${obj.type}"
+                />
+                <h5>${obj.description}</h5>
+                <div class="stars">
+                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                </div>
+                <p><span class="catalog_price">${obj.price} hrv</span></p>
+                <button>Add to cart</button>
+              </div>`;
+          if (i >= 30 && i < 40) {
+            page.insertAdjacentHTML("beforeend", card);
+          }
+        });
+        break;
+    }
+  });
+
+
+
 
 let products = [];
 data.forEach((obj) => {
@@ -39,6 +195,7 @@ data.forEach((obj) => {
     products.push(obj.type);
   }
 });
+
 
 //catalog page, aside-container => product
 const sorted = products.toSorted();

@@ -382,6 +382,7 @@ img {
   bottom: 140px;
   text-align: center;
   line-height: 100px;
+  z-index: 50;
 }
 
 .footer {
