@@ -7,6 +7,10 @@
   --button-border: 1px solid black;
 }
 
+body {
+  background-color: #fff;
+}
+
 h1,
 h4 {
   font-family: var(--primary-font-family);
@@ -359,9 +363,9 @@ img {
   display: inline-block;
 }
 
-.container.about .image {
+.container.about img {
   position: absolute;
-  left: 488px;
+  left: 38%;
   top: -167px;
 }
 
@@ -448,9 +452,6 @@ sub.copywrite {
   .wrapper {
     width: 1440px;
     margin: 0 auto;
-  }
-  body {
-    background-color: var(--accent-color);
   }
 }
 
