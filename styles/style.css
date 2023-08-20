@@ -132,10 +132,13 @@ img {
 
 .search {
   border: 1px solid var(--background-color);
-  border-radius: 20px;
+  border-radius: 54px;
+  background-color: white;
+  height: 40px;
+  width: 270px;
   padding: 5px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -148,17 +151,14 @@ img {
 }
 
 .search input::placeholder {
-  font-size: 0.7em;
+  font-size: 15px;
+  font-family: var(--primary-font-family);
   text-transform: uppercase;
 }
 
 .search button {
   border: none;
   background-color: white;
-}
-
-.search .search-icon {
-  color: var(--background-color);
 }
 
 .shorts,
