@@ -476,9 +476,9 @@ sub.copywrite {
 @media (max-width: 1183px) {
   .container.shirt-desc {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-basis: 550px;
-    margin: 0 auto;
+    margin: 80px auto;
   }
 
   .new-discount {
