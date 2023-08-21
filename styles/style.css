@@ -369,7 +369,7 @@ img {
 
 .container.about img {
   position: absolute;
-  left: 38%;
+  left: 40%;
   top: -167px;
 }
 
@@ -386,8 +386,8 @@ img {
   width: 83px;
   height: 83px;
   position: fixed;
-  right: 25px;
-  bottom: 140px;
+  right: 5px;
+  bottom: 5px;
   text-align: center;
   line-height: 100px;
   z-index: 50;
