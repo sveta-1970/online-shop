@@ -254,12 +254,15 @@ img {
 
 .container.shirt-desc {
   margin: 107px 152px;
-  gap: 36px;
+  gap: 5%;
 }
 
 .new-discount {
   position: relative;
   display: inline-block;
+  flex-basis: 50%;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .new-discount image {
@@ -464,12 +467,20 @@ sub.copywrite {
     line-height: 75px;
   }
 
-  .new-discount h3 {
-    position: relative;
-    bottom: initial;
-  }
   .new-discount p {
     font-size: 22px;
+  }
+}
+
+@media (max-width: 1183px) {
+  .container.shirt-desc {
+    flex-direction: column;
+    justify-content: space-between;
+    bottom: initial;
+  }
+
+  .new-discount:first-of-type {
+    margin-bottom: 10%;
   }
 }
 
@@ -506,10 +517,6 @@ sub.copywrite {
 
   .card button {
     font-size: 14px;
-  }
-
-  .new-discount a.button {
-    width: 250px;
   }
 
   .sportif-pants {
@@ -555,16 +562,6 @@ sub.copywrite {
 
   .container.shorts {
     flex-direction: column-reverse;
-  }
-
-  .container.shirt-desc {
-    flex-direction: column;
-  }
-
-  .container.shirt-desc .new-discount {
-    display: block;
-    position: static;
-    width: 80%;
   }
 
   .container.pants {
