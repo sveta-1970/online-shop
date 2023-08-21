@@ -477,11 +477,22 @@ sub.copywrite {
   .container.shirt-desc {
     flex-direction: column;
     justify-content: space-between;
-    bottom: initial;
+    flex-basis: 550px;
+    margin: 0 auto;
+  }
+
+  .new-discount {
+    position: relative;
+    display: inline-block;
   }
 
   .new-discount:first-of-type {
     margin-bottom: 10%;
+  }
+
+  .new-discount h3 {
+    width: 100%;
+    bottom: 237px;
   }
 }
 
