@@ -363,7 +363,8 @@ img {
 
 .container.about {
   position: relative;
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
 }
 
 .container.about img {
