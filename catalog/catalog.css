@@ -2,7 +2,9 @@
   --background-color: #a04955;
   --primary-font-family: "Oswald";
   --secondary-font-family: "Open Sans";
+  --headings-color: #001f3d;
   --accent-color: #f3f3f3;
+  --button-border: 1px solid black;
 }
 
 header {
@@ -113,10 +115,11 @@ a {
 .header .menu-item a {
   color: #333333;
 }
-
 .search {
   border: 1px solid var(--background-color);
-  border-radius: 20px;
+  border-radius: 54px;
+  height: 40px;
+  width: 270px;
   padding: 5px;
   display: flex;
   justify-content: space-between;
@@ -132,7 +135,8 @@ a {
 }
 
 .search input::placeholder {
-  font-size: 0.7em;
+  font-size: 15px;
+  font-family: var(--primary-font-family);
   text-transform: uppercase;
 }
 

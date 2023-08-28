@@ -29,11 +29,11 @@ data.forEach((obj, i) => {
                 />
                 <h5>${obj.description}</h5>
                 <div class="stars">
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
                 </div>
                 <p><span class="catalog_price">${obj.price} hrv</span></p>
                 <button>Add to cart</button>
@@ -67,11 +67,11 @@ page_number.addEventListener("click", (e) => {
                 />
                 <h5>${obj.description}</h5>
                 <div class="stars">
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
                 </div>
                 <p><span class="catalog_price">${obj.price} hrv</span></p>
                 <button>Add to cart</button>
@@ -101,11 +101,11 @@ page_number.addEventListener("click", (e) => {
                 />
                 <h5>${obj.description}</h5>
                 <div class="stars">
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
                 </div>
                 <p><span class="catalog_price">${obj.price} hrv</span></p>
                 <button>Add to cart</button>
@@ -135,11 +135,11 @@ page_number.addEventListener("click", (e) => {
                 />
                 <h5>${obj.description}</h5>
                 <div class="stars">
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
                 </div>
                 <p><span class="catalog_price">${obj.price} hrv</span></p>
                 <button>Add to cart</button>
@@ -169,11 +169,11 @@ page_number.addEventListener("click", (e) => {
                 />
                 <h5>${obj.description}</h5>
                 <div class="stars">
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
-                  <img src="./images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  <img src="../images/homepage_images/Star 1.png" alt="star" />
                 </div>
                 <p><span class="catalog_price">${obj.price} hrv</span></p>
                 <button>Add to cart</button>
