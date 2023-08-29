@@ -50,25 +50,29 @@ Array.from(buttons).forEach((button) => {
   button.addEventListener("click", (e) => {
     localStorage.categoryClicked = "";
     let buttonText = e.target.innerText.toLowerCase();
-    console.log(buttonText);
-    if (buttonText.includes("shirts")) {
-      key === "shirts";
+
+    if (
+      buttonText.includes("shirts") ||
+      buttonText.includes("ecoth") ||
+      buttonText.includes("powell")
+    ) {
+      key = "shirts";
     }
     if (buttonText.includes("shorts")) {
-      key === "shorts";
+      key = "shorts";
     }
-    if (buttonText.includes("pants")) {
-      key === "pants";
+    if (buttonText.includes("pants") || buttonText.includes("pant")) {
+      key = "pants";
     }
-    if (buttonText.includes("swimtrunks")) {
-      key === "swimtrunks";
+    if (buttonText.includes("swim trunks")) {
+      key = "swimtrunks";
     }
     if (buttonText.includes("belts")) {
-      key === "belts";
+      key = "belts";
     }
-    console.log(key);
+
     localStorage.categoryClicked = key; //зберігаємо в локальному хранилищі на яку кнопку ми натиснули
-    //const wind = window.open(`./catalog/index.html?${key}`); //відкриваємо сторінку каталога
+    const wind = window.open(`./catalog/index.html?${key}`); //відкриваємо сторінку каталога
   });
 });
 
