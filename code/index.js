@@ -4,7 +4,45 @@ if (!Array.isArray(data)) {
   throw new Error(`Ми отримали щось інше...`);
 }
 
+//збереження в локал сторидж
+let all_products = "",
+  shirts = "",
+  shorts = "",
+  pants = "",
+  belts = "",
+  swimtrunks = "";
 
+let allShorts = [];
+let allShirts = [];
+let allPants = [];
+let allBelts = [];
+let allSwimTrunks = [];
+
+localStorage.clear();
+data.map((obj) => {
+  if (obj.type === "shirts") {
+    allShirts.push(obj);
+  } else if (obj.type === "shorts") {
+    allShorts.push(obj);
+  } else if (obj.type === "pants") {
+    allPants.push(obj);
+  } else if (obj.type === "belts") {
+    allBelts.push(obj);
+  } else if (obj.type === "swimtrunks") {
+    allSwimTrunks.push(obj);
+  } else {
+    alert("there is no such category in database");
+  }
+});
+debugger;
+localStorage.setItem(all_products, data);
+localStorage.setItem(shirts, allShirts);
+localStorage.setItem(shorts, allShorts);
+localStorage.setItem(pants, allPants);
+localStorage.setItem(belts, allBelts);
+localStorage.setItem(swimtrunks, allSwimTrunks);
+
+/*
 //вивід інфо на карточки на сторінці catalog
   const page = document.getElementById("catalog-cards");
   let page_number = 0;
@@ -233,3 +271,4 @@ document.getElementsByClassName("price").innerHTML = `<p><span>${obj_price} hrv<
 
 const catalog_card = document.getElementsByClassName("card");
 catalog_card.addEventListener("click", showModal);
+*/
