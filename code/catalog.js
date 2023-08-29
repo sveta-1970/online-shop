@@ -1,3 +1,9 @@
+//инфо с адресной строки можно прочитать при помощи location
+const category = document.location.search.substr(1);
+console.log(category);
+//?category нужно теперь убрать вопрос, для этого исп. метод строки substr(1),
+//т.е. нам нужна инфо начиная с первого индекса
+
 /*
 //вивід інфо на карточки на сторінці catalog
   const page = document.getElementById("catalog-cards");

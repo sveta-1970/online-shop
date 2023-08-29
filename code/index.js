@@ -45,10 +45,10 @@ localStorage.setItem("swimtrunks", JSON.stringify(allSwimTrunks));
 //перехід на сторінку каталогу, збереження в локал сторидж ключа для фильтрации продукту
 const buttons = document.getElementsByClassName("button-to-catalog");
 let key = "";
+let categoryClicked = "";
 
 Array.from(buttons).forEach((button) => {
   button.addEventListener("click", (e) => {
-    localStorage.categoryClicked = "";
     let buttonText = e.target.innerText.toLowerCase();
 
     if (
@@ -70,9 +70,7 @@ Array.from(buttons).forEach((button) => {
     if (buttonText.includes("belts")) {
       key = "belts";
     }
-
-    localStorage.categoryClicked = key; //зберігаємо в локальному хранилищі на яку кнопку ми натиснули
+    //localStorage.setItem("categoryClicked", key);
     const wind = window.open(`./catalog/index.html?${key}`); //відкриваємо сторінку каталога
   });
 });
-
