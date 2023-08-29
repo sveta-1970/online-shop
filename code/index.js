@@ -31,16 +31,46 @@ data.forEach((obj) => {
   } else if (obj.type === "swimtrunks") {
     allSwimTrunks.push(obj);
   } else {
-    alert("there is no such category in database");
+    alert("The is no such category in data array");
   }
 });
 
-localStorage.setItem(all_products, data);
-localStorage.setItem(shirts, allShirts);
-localStorage.setItem(shorts, allShorts);
-localStorage.setItem(pants, allPants);
-localStorage.setItem(belts, allBelts);
-localStorage.setItem(swimtrunks, allSwimTrunks);
+localStorage.setItem("all_products", JSON.stringify(data));
+localStorage.setItem("shirts", JSON.stringify(allShirts));
+localStorage.setItem("shorts", JSON.stringify(allShorts));
+localStorage.setItem("pants", JSON.stringify(allPants));
+localStorage.setItem("belts", JSON.stringify(allBelts));
+localStorage.setItem("swimtrunks", JSON.stringify(allSwimTrunks));
+
+//перехід на сторінку каталогу, збереження в локал сторидж ключа для фильтрации продукту
+const buttons = document.getElementsByClassName("button-to-catalog");
+let key = "";
+
+Array.from(buttons).forEach((button) => {
+  button.addEventListener("click", (e) => {
+    localStorage.categoryClicked = "";
+    let buttonText = e.target.innerText.toLowerCase();
+    console.log(buttonText);
+    if (buttonText.includes("shirts")) {
+      key === "shirts";
+    }
+    if (buttonText.includes("shorts")) {
+      key === "shorts";
+    }
+    if (buttonText.includes("pants")) {
+      key === "pants";
+    }
+    if (buttonText.includes("swimtrunks")) {
+      key === "swimtrunks";
+    }
+    if (buttonText.includes("belts")) {
+      key === "belts";
+    }
+    console.log(key);
+    localStorage.categoryClicked = key; //зберігаємо в локальному хранилищі на яку кнопку ми натиснули
+    //const wind = window.open(`./catalog/index.html?${key}`); //відкриваємо сторінку каталога
+  });
+});
 
 /*
 //вивід інфо на карточки на сторінці catalog
