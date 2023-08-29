@@ -1,21 +1,21 @@
 //инфо с адресной строки можно прочитать при помощи location
 const category = document.location.search.substr(1);
-console.log(category);
 //?category нужно теперь убрать вопрос, для этого исп. метод строки substr(1),
 //т.е. нам нужна инфо начиная с первого индекса
 
-/*
-//вивід інфо на карточки на сторінці catalog
-  const page = document.getElementById("catalog-cards");
-  let page_number = 0;
-  page_number = document.querySelector(".pagination");
-  const links = document.querySelectorAll(".pagination_button"),
-    active_link_1 = document.querySelector("#page_one"),
-    active_link_2 = document.querySelector("#page_two"),
-    active_link_3 = document.querySelector("#page_three"),
-    active_link_4 = document.querySelector("#page_four");
+const currentData = JSON.parse(localStorage.getItem(category));
+document.querySelector("title").innerHTML = category;
 
-data.forEach((obj, i) => {
+//вивід інфо на карточки на сторінці catalog
+const page = document.getElementById("catalog-cards");
+let page_number = 0;
+page_number = document.querySelector(".pagination");
+const links = document.querySelectorAll(".pagination_button"),
+  active_link_1 = document.querySelector("#page_one"),
+  active_link_2 = document.querySelector("#page_two"),
+  active_link_3 = document.querySelector("#page_three"),
+  active_link_4 = document.querySelector("#page_four");
+currentData.forEach((obj, i) => {
   const card = `<div class="card">
                 <img
                   class="product_image"
@@ -38,23 +38,22 @@ data.forEach((obj, i) => {
                 <p><span class="catalog_price">${obj.price} hrv</span></p>
                 <button>Add to cart</button>
               </div>`;
-if (i >= 0 && i < 10){
-  page.insertAdjacentHTML("beforeend", card);
-}
-  //document.getElementById("catalog-cards").innerHTML += card;
+  if (i >= 0 && i < 10) {
+    page.insertAdjacentHTML("beforeend", card);
+  }
 });
 
 //pagination for 4 pages
 page_number.addEventListener("click", (e) => {
-    switch (e.target.innerText) {
-      case "1":
-        page.innerHTML = ""; //clear previously shown objects
-        links.forEach((link) => {
-          link.classList.remove("active");
-        });
-        active_link_1.classList.add("active");
-        data.forEach((obj, i) => {
-          const card = `<div class="card">
+  switch (e.target.innerText) {
+    case "1":
+      page.innerHTML = ""; //clear previously shown objects
+      links.forEach((link) => {
+        link.classList.remove("active");
+      });
+      active_link_1.classList.add("active");
+      currentData.forEach((obj, i) => {
+        const card = `<div class="card">
                 <img
                   class="product_image"
                   src="${obj.image1}"
@@ -76,19 +75,19 @@ page_number.addEventListener("click", (e) => {
                 <p><span class="catalog_price">${obj.price} hrv</span></p>
                 <button>Add to cart</button>
               </div>`;
-          if (i >= 0 && i < 10) {
-            page.insertAdjacentHTML("beforeend", card);
-          }
-        });
-        break;
-      case "2":
-        page.innerHTML = "";
-        links.forEach((link) => {
-          link.classList.remove("active");
-        });
-        active_link_2.classList.add("active");
-        data.forEach((obj, i) => {
-          const card = `<div class="card">
+        if (i >= 0 && i < 10) {
+          page.insertAdjacentHTML("beforeend", card);
+        }
+      });
+      break;
+    case "2":
+      page.innerHTML = "";
+      links.forEach((link) => {
+        link.classList.remove("active");
+      });
+      active_link_2.classList.add("active");
+      currentData.forEach((obj, i) => {
+        const card = `<div class="card">
                 <img
                   class="product_image"
                   src="${obj.image1}"
@@ -110,19 +109,19 @@ page_number.addEventListener("click", (e) => {
                 <p><span class="catalog_price">${obj.price} hrv</span></p>
                 <button>Add to cart</button>
               </div>`;
-          if (i >= 10 && i < 20) {
-            page.insertAdjacentHTML("beforeend", card);
-          }
-        });
-        break;
-      case "3":
-        page.innerHTML = "";
-        links.forEach((link) => {
-          link.classList.remove("active");
-        });
-        active_link_3.classList.add("active");
-        data.forEach((obj, i) => {
-          const card = `<div class="card">
+        if (i >= 10 && i < 20) {
+          page.insertAdjacentHTML("beforeend", card);
+        }
+      });
+      break;
+    case "3":
+      page.innerHTML = "";
+      links.forEach((link) => {
+        link.classList.remove("active");
+      });
+      active_link_3.classList.add("active");
+      currentData.forEach((obj, i) => {
+        const card = `<div class="card">
                 <img
                   class="product_image"
                   src="${obj.image1}"
@@ -144,19 +143,19 @@ page_number.addEventListener("click", (e) => {
                 <p><span class="catalog_price">${obj.price} hrv</span></p>
                 <button>Add to cart</button>
               </div>`;
-          if (i >= 20 && i < 30) {
-            page.insertAdjacentHTML("beforeend", card);
-          }
-        });
-        break;
-      case "4":
-        page.innerHTML = "";
-        links.forEach((link) => {
-          link.classList.remove("active");
-        });
-        active_link_4.classList.add("active");
-        data.forEach((obj, i) => {
-          const card = `<div class="card">
+        if (i >= 20 && i < 30) {
+          page.insertAdjacentHTML("beforeend", card);
+        }
+      });
+      break;
+    case "4":
+      page.innerHTML = "";
+      links.forEach((link) => {
+        link.classList.remove("active");
+      });
+      active_link_4.classList.add("active");
+      currentData.forEach((obj, i) => {
+        const card = `<div class="card">
                 <img
                   class="product_image"
                   src="${obj.image1}"
@@ -178,16 +177,15 @@ page_number.addEventListener("click", (e) => {
                 <p><span class="catalog_price">${obj.price} hrv</span></p>
                 <button>Add to cart</button>
               </div>`;
-          if (i >= 30 && i < 40) {
-            page.insertAdjacentHTML("beforeend", card);
-          }
-        });
-        break;
-    }
-  });
+        if (i >= 30 && i < 40) {
+          page.insertAdjacentHTML("beforeend", card);
+        }
+      });
+      break;
+  }
+});
 
-
-
+/*
 
 let products = [];
 data.forEach((obj) => {
