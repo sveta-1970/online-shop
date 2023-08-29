@@ -19,7 +19,7 @@ let allBelts = [];
 let allSwimTrunks = [];
 
 localStorage.clear();
-data.map((obj) => {
+data.forEach((obj) => {
   if (obj.type === "shirts") {
     allShirts.push(obj);
   } else if (obj.type === "shorts") {
@@ -34,7 +34,7 @@ data.map((obj) => {
     alert("there is no such category in database");
   }
 });
-debugger;
+
 localStorage.setItem(all_products, data);
 localStorage.setItem(shirts, allShirts);
 localStorage.setItem(shorts, allShorts);
