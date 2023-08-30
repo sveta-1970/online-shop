@@ -42,6 +42,16 @@ localStorage.setItem("pants", JSON.stringify(allPants));
 localStorage.setItem("belts", JSON.stringify(allBelts));
 localStorage.setItem("swimtrunks", JSON.stringify(allSwimTrunks));
 
+//перехід на сторінку каталогу з усім асортиментом
+const catalog_buttons = document.getElementsByClassName(
+  "button-to-all-catalog"
+);
+Array.from(catalog_buttons).forEach((catalog_button) => {
+  catalog_button.addEventListener("click", (e) => {
+    const wind = window.open("./catalog/index.html");
+  });
+});
+
 //перехід на сторінку каталогу, збереження в локал сторидж ключа для фильтрации продукту
 const buttons = document.getElementsByClassName("button-to-catalog");
 let key = "";

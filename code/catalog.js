@@ -3,8 +3,16 @@ const category = document.location.search.substr(1);
 //?category нужно теперь убрать вопрос, для этого исп. метод строки substr(1),
 //т.е. нам нужна инфо начиная с первого индекса
 
-const currentData = JSON.parse(localStorage.getItem(category));
-document.querySelector("title").innerHTML = category;
+let currentData = [];
+if (category) {
+  currentData = JSON.parse(localStorage.getItem(category));
+  document.querySelector("title").innerHTML = category;
+  document.getElementById("selected-type").innerHTML = category;
+} else {
+  currentData = JSON.parse(localStorage.getItem("all_products"));
+  document.querySelector("title").innerHTML = "Catalog";
+  document.getElementById("selected-type").innerHTML = "Catalog";
+}
 
 //вивід інфо на карточки на сторінці catalog
 const page = document.getElementById("catalog-cards");

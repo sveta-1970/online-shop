@@ -50,17 +50,27 @@
           </nav>
           <div class="search">
             <button type="submit" title="search">
-              <img class="search-icon" src="../images/homepage_images/Search-icon.png" alt="search-icon">
+              <img
+                class="search-icon"
+                src="../images/homepage_images/Search-icon.png"
+                alt="search-icon"
+              />
             </button>
             <input type="text" placeholder="Search entire store here" />
           </div>
         </div>
         <div class="submenu container">
           <div class="submenu-filter container">
-              <img src="../images/catalog_images/Vector_home.png" alt="logo_homepage" />
-              <a href="/"><h2>Home</h2></a>
-            <img src="../images/catalog_images/Vector_right.png" alt="arrow right"/>
-            <h3>Shorts</h3>
+            <img
+              src="../images/catalog_images/Vector_home.png"
+              alt="logo_homepage"
+            />
+            <a href="/"><h2>Home</h2></a>
+            <img
+              src="../images/catalog_images/Vector_right.png"
+              alt="arrow right"
+            />
+            <h3 id="selected-type"></h3>
           </div>
           <h1>Search</h1>
         </div>
@@ -71,7 +81,10 @@
             <div class="size line">
               <div class="section-header">
                 <h5>Size</h5>
-                <img src="../images/catalog_images/Vector_down.png" alt="arrow down">
+                <img
+                  src="../images/catalog_images/Vector_down.png"
+                  alt="arrow down"
+                />
               </div>
               <ul class="dropdownlist size">
                 <li>
@@ -106,7 +119,10 @@
             <div class="color line">
               <div class="section-header">
                 <h5>Color</h5>
-                <img src="../images/catalog_images/Vector_down.png" alt="arrow down">
+                <img
+                  src="../images/catalog_images/Vector_down.png"
+                  alt="arrow down"
+                />
               </div>
               <ul class="dropdownlist color">
                 <li>
@@ -134,7 +150,10 @@
             </div>
             <div class="product line">
               <div class="section-header">
-                <img src="../images/catalog_images/Vector_down.png" alt="arrow down">
+                <img
+                  src="../images/catalog_images/Vector_down.png"
+                  alt="arrow down"
+                />
               </div>
               <ul class="dropdownlist product">
                 <li>
@@ -163,7 +182,10 @@
             <div class="inseam line">
               <div class="section-header">
                 <h5>Inseam</h5>
-                <img src="../images/catalog_images/Vector_down.png" alt="arrow down">
+                <img
+                  src="../images/catalog_images/Vector_down.png"
+                  alt="arrow down"
+                />
               </div>
               <ul class="dropdownlist inseam">
                 <li>
@@ -177,7 +199,10 @@
             <div class="sustainable-fabric line">
               <div class="section-header">
                 <h5>Sustainable fabric</h5>
-                <img src="../images/catalog_images/Vector_down.png" alt="arrow down">
+                <img
+                  src="../images/catalog_images/Vector_down.png"
+                  alt="arrow down"
+                />
               </div>
               <ul class="dropdownlist sustainable-fabric">
                 <li>
@@ -191,7 +216,10 @@
             <div class="collections">
               <div class="section-header">
                 <h5>Collections</h5>
-                <img src="../images/catalog_images/Vector_down.png" alt="arrow down">
+                <img
+                  src="../images/catalog_images/Vector_down.png"
+                  alt="arrow down"
+                />
               </div>
               <ul class="dropdownlist collections">
                 <li>
@@ -203,22 +231,38 @@
               </ul>
             </div>
           </aside>
-          <div class="main-container cards" id="catalog-cards">
-              
-            </div>
-            <div class="arrow-up">
-              <a href="#header"
-                ><img
-                  src="
-          ../images/homepage_images/Arrow 1.png"
-                  alt="arrow"
-              /></a>
+          <div class="main-container cards" id="catalog-cards"></div>
+          <div class="box-modal">
+            <div class="modal">
+              <span id="modal-closed">
+                <img
+                  src="data:image/png;base64,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"
+                  alt="close"
+                  width="25px"
+                  ;
+                  height="auto"
+                  ;
+                />
+              </span>
+              <div class="modal-body"></div>
             </div>
           </div>
-          <nav aria-label="pagination">
+          <div class="arrow-up">
+            <a href="#header"
+              ><img
+                src="
+          ../images/homepage_images/Arrow 1.png"
+                alt="arrow"
+            /></a>
+          </div>
+        </div>
+        <nav aria-label="pagination">
           <ul class="pagination">
             <li>
-              <a href="/catalog/index.html" id="page_one" class="pagination_button active"
+              <a
+                href="/catalog/index.html"
+                id="page_one"
+                class="pagination_button active"
                 >1</a
               >
             </li>
@@ -233,7 +277,6 @@
             </li>
           </ul>
         </nav>
-        </main>  
       </main>
       <footer>
         <div class="container footer">
@@ -336,7 +379,7 @@
         >
       </footer>
     </div>
-    
+
     <script src="../code/data.js"></script>
     <script src="../code/catalog.js"></script>
   </body>
