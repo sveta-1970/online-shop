@@ -28,7 +28,7 @@ currentData.forEach((obj, i) => {
                 <img
                   class="product_image"
                   src="${obj.image1}"
-                  alt="${obj.type}"
+                  alt="${obj.type + " " + obj.id}"
                 />
                 <img
                   class="product_image2"
@@ -44,7 +44,7 @@ currentData.forEach((obj, i) => {
                   <img src="../images/homepage_images/Star 1.png" alt="star" />
                 </div>
                 <p><span class="catalog_price">${obj.price} hrv</span></p>
-                <button class="add-to-cart">Add to cart</button>
+                <button>Add to cart</button>
               </div>`;
   if (i >= 0 && i < 10) {
     page.insertAdjacentHTML("beforeend", card);
@@ -65,7 +65,7 @@ page_number.addEventListener("click", (e) => {
                 <img
                   class="product_image"
                   src="${obj.image1}"
-                  alt="${obj.type}"
+                  alt="${obj.type + " " + obj.id}"
                 />
                 <img
                   class="product_image2"
@@ -81,7 +81,7 @@ page_number.addEventListener("click", (e) => {
                   <img src="../images/homepage_images/Star 1.png" alt="star" />
                 </div>
                 <p><span class="catalog_price">${obj.price} hrv</span></p>
-                <button class="add-to-cart">Add to cart</button>
+                <button>Add to cart</button>
               </div>`;
         if (i >= 0 && i < 10) {
           page.insertAdjacentHTML("beforeend", card);
@@ -99,7 +99,7 @@ page_number.addEventListener("click", (e) => {
                 <img
                   class="product_image"
                   src="${obj.image1}"
-                  alt="${obj.type}"
+                  alt="${obj.type} + " " + obj.id"
                 />
                 <img
                   class="product_image2"
@@ -115,7 +115,7 @@ page_number.addEventListener("click", (e) => {
                   <img src="../images/homepage_images/Star 1.png" alt="star" />
                 </div>
                 <p><span class="catalog_price">${obj.price} hrv</span></p>
-                <button class="add-to-cart">Add to cart</button>
+                <button>Add to cart</button>
               </div>`;
         if (i >= 10 && i < 20) {
           page.insertAdjacentHTML("beforeend", card);
@@ -133,7 +133,7 @@ page_number.addEventListener("click", (e) => {
                 <img
                   class="product_image"
                   src="${obj.image1}"
-                  alt="${obj.type}"
+                  alt="${obj.type} + " " + obj.id"
                 />
                 <img
                   class="product_image2"
@@ -149,7 +149,7 @@ page_number.addEventListener("click", (e) => {
                   <img src="../images/homepage_images/Star 1.png" alt="star" />
                 </div>
                 <p><span class="catalog_price">${obj.price} hrv</span></p>
-                <button class="add-to-cart">Add to cart</button>
+                <button>Add to cart</button>
               </div>`;
         if (i >= 20 && i < 30) {
           page.insertAdjacentHTML("beforeend", card);
@@ -167,7 +167,7 @@ page_number.addEventListener("click", (e) => {
                 <img
                   class="product_image"
                   src="${obj.image1}"
-                  alt="${obj.type}"
+                  alt="${obj.type} + " " + obj.id"
                 />
                 <img
                   class="product_image2"
@@ -183,7 +183,7 @@ page_number.addEventListener("click", (e) => {
                   <img src="../images/homepage_images/Star 1.png" alt="star" />
                 </div>
                 <p><span class="catalog_price">${obj.price} hrv</span></p>
-                <button class="add-to-cart">Add to cart</button>
+                <button>Add to cart</button>
               </div>`;
         if (i >= 30 && i < 40) {
           page.insertAdjacentHTML("beforeend", card);
@@ -194,21 +194,31 @@ page_number.addEventListener("click", (e) => {
 });
 
 //виклик модального вікна
-const catalog_cards = document.getElementsByClassName("add-to-cart");
+const catalog_cards = document.getElementsByClassName("card");
 // Loop through the collection of cards
 for (let i = 0; i < catalog_cards.length; i++) {
   // Add event listener to each card
-  catalog_cards[i].addEventListener("click", showModal);
+  catalog_cards[i].addEventListener("click", (e) => {
+    console.log(catalog_cards[i]);
+    let altValue = document
+      .querySelector(".card:nth-child(" + (i + 1) + ") img")
+      .getAttribute("alt");
+    console.log(altValue);
+    let key = "current_product";
+    let productClicked = localStorage.setItem(
+      "current_product",
+      JSON.stringify(altValue)
+    );
+  });
 }
 
-//modal window
-function showModal() {
-  const modal = document.querySelector(".box-modal");
-  modal.classList.add("active");
-  document.querySelector("#modal-closed").addEventListener("click", () => {
-    modal.classList.remove("active");
-  });
+/*
 
+//modal window
+export default function showModal(e) {
+  const modal = document.querySelector(".modal");
+
+  
   const patternModal = `
       <div class="modal-container">
         <div class="modal-images">
