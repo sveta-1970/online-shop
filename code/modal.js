@@ -56,6 +56,15 @@ function showModal(obj) {
           <p class="price">${obj.price} hrv</p>
           <h2>Color:</h2>
           <div class="list color">
+          ${
+            obj.color.length !== 0
+              ? obj.color
+                  .map((el) => {
+                    return `<div>${el}</div>`;
+                  })
+                  .join("")
+              : `<div>No such product</div>`
+          }
             <div class="black"></div>
             <div class="brown"></div>
             <div class="blue"></div>
@@ -64,14 +73,16 @@ function showModal(obj) {
           </div>
           <h2>Size:</h2>
           <div class="list size">
-            <div>30</div>
-            <div>32</div>
-            <div>34</div>
-            <div>36</div>
-            <div>38</div>
-            <div>40</div>
-            <div>44</div>
-            <div>46</div>
+          ${
+            obj.size.length !== 0
+              ? obj.size
+                  .map((el) => {
+                    return `<div>${el}</div>`;
+                  })
+                  .join("")
+              : `<div>No such product</div>`
+          }
+            
           </div>
           <div class="buttons">
             <button class="add-to-bag" title="submit">
