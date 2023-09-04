@@ -45,11 +45,11 @@ function showModal(obj) {
             ${obj.description} <span>ITEM # ${obj.id}</span>
           </h1>
           <div class="stars">
-            <img src="./images/homepage_images/Star 1.png" alt="star" />
-            <img src="./images/homepage_images/Star 1.png" alt="star" />
-            <img src="./images/homepage_images/Star 1.png" alt="star" />
-            <img src="./images/homepage_images/Star 1.png" alt="star" />
-            <img src="./images/homepage_images/Star 1.png" alt="star" />
+            <img src="../images/homepage_images/Star 1.png" alt="star" />
+            <img src="../images/homepage_images/Star 1.png" alt="star" />
+            <img src="../images/homepage_images/Star 1.png" alt="star" />
+            <img src="../images/homepage_images/Star 1.png" alt="star" />
+            <img src="../images/homepage_images/Star 1.png" alt="star" />
             <span>93 reviews</span>
           </div>
           <p>As low as</p>
@@ -84,25 +84,25 @@ function showModal(obj) {
           <div class="social-networks">
             <a href="#">
               <img
-                src="./images/modal_menu_images/social-networks/facebook.png"
+                src="../images/modal_menu_images/social-networks/facebook.png"
                 alt="facebook_logo"
               />
             </a>
             <a href="#">
               <img
-                src="./images/modal_menu_images/social-networks/Vector_twitter.png"
+                src="../images/modal_menu_images/social-networks/Vector_twitter.png"
                 alt="twitter_logo"
               />
             </a>
             <a href="#">
               <img
-                src="./images/modal_menu_images/social-networks/pinterest.png"
+                src="../images/modal_menu_images/social-networks/pinterest.png"
                 alt="pant"
               />
             </a>
             <a href="#">
               <img
-                src="./images/modal_menu_images/social-networks/link.png"
+                src="../images/modal_menu_images/social-networks/link.png"
                 alt="link_logo"
               />
             </a>
@@ -112,7 +112,7 @@ function showModal(obj) {
             <div class="container">
               <div class="delivery col">
                 <img
-                  src="./images/modal_menu_images/Vector_delivery.png"
+                  src="../images/modal_menu_images/Vector_delivery.png"
                   alt="delivery_logo"
                   width="35px"
                   height="28px"
@@ -121,7 +121,7 @@ function showModal(obj) {
               </div>
               <div class="exchange col">
                 <img
-                  src="./images/modal_menu_images/Vector_exchange.png"
+                  src="../images/modal_menu_images/Vector_exchange.png"
                   alt="exchange_logo"
                   width="30px"
                   height="31px"
