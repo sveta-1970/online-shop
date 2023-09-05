@@ -37,11 +37,27 @@ currentData.forEach((obj, i) => {
                 />
                 <h5>${obj.description}</h5>
                 <div class="stars">
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  ${
+                    obj.rating !== 0
+                      ? Array.from(
+                          { length: 5 },
+                          (_, index) =>
+                            `<img
+                      src="../images/homepage_images/Star ${
+                        index < obj.rating ? 1 : 5
+                      }.png"
+                      alt="star"
+                    />`
+                        ).join("")
+                      : Array.from(
+                          { length: 5 },
+                          () =>
+                            `<img
+                      src="../images/homepage_images/Star 5.png"
+                      alt="star"
+                    />`
+                        )
+                  }
                 </div>
                 <p><span class="catalog_price">${obj.price} hrv</span></p>
                 <button>Add to cart</button>
@@ -74,11 +90,27 @@ page_number.addEventListener("click", (e) => {
                 />
                 <h5>${obj.description}</h5>
                 <div class="stars">
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  ${
+                    obj.rating !== 0
+                      ? Array.from(
+                          { length: 5 },
+                          (_, index) =>
+                            `<img
+                      src="../images/homepage_images/Star ${
+                        index < obj.rating ? 1 : 5
+                      }.png"
+                      alt="star"
+                    />`
+                        ).join("")
+                      : Array.from(
+                          { length: 5 },
+                          () =>
+                            `<img
+                      src="../images/homepage_images/Star 5.png"
+                      alt="star"
+                    />`
+                        )
+                  }
                 </div>
                 <p><span class="catalog_price">${obj.price} hrv</span></p>
                 <button>Add to cart</button>
@@ -108,11 +140,27 @@ page_number.addEventListener("click", (e) => {
                 />
                 <h5>${obj.description}</h5>
                 <div class="stars">
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  ${
+                    obj.rating !== 0
+                      ? Array.from(
+                          { length: 5 },
+                          (_, index) =>
+                            `<img
+                      src="../images/homepage_images/Star ${
+                        index < obj.rating ? 1 : 5
+                      }.png"
+                      alt="star"
+                    />`
+                        ).join("")
+                      : Array.from(
+                          { length: 5 },
+                          () =>
+                            `<img
+                      src="../images/homepage_images/Star 5.png"
+                      alt="star"
+                    />`
+                        )
+                  }
                 </div>
                 <p><span class="catalog_price">${obj.price} hrv</span></p>
                 <button>Add to cart</button>
@@ -142,11 +190,27 @@ page_number.addEventListener("click", (e) => {
                 />
                 <h5>${obj.description}</h5>
                 <div class="stars">
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  ${
+                    obj.rating !== 0
+                      ? Array.from(
+                          { length: 5 },
+                          (_, index) =>
+                            `<img
+                      src="../images/homepage_images/Star ${
+                        index < obj.rating ? 1 : 5
+                      }.png"
+                      alt="star"
+                    />`
+                        ).join("")
+                      : Array.from(
+                          { length: 5 },
+                          () =>
+                            `<img
+                      src="../images/homepage_images/Star 5.png"
+                      alt="star"
+                    />`
+                        )
+                  }
                 </div>
                 <p><span class="catalog_price">${obj.price} hrv</span></p>
                 <button>Add to cart</button>
@@ -176,11 +240,27 @@ page_number.addEventListener("click", (e) => {
                 />
                 <h5>${obj.description}</h5>
                 <div class="stars">
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
-                  <img src="../images/homepage_images/Star 1.png" alt="star" />
+                  ${
+                    obj.rating !== 0
+                      ? Array.from(
+                          { length: 5 },
+                          (_, index) =>
+                            `<img
+                      src="../images/homepage_images/Star ${
+                        index < obj.rating ? 1 : 5
+                      }.png"
+                      alt="star"
+                    />`
+                        ).join("")
+                      : Array.from(
+                          { length: 5 },
+                          () =>
+                            `<img
+                      src="../images/homepage_images/Star 5.png"
+                      alt="star"
+                    />`
+                        )
+                  }
                 </div>
                 <p><span class="catalog_price">${obj.price} hrv</span></p>
                 <button>Add to cart</button>
@@ -211,7 +291,6 @@ for (let i = 0; i < catalog_cards.length; i++) {
     window.open(url); // Open the modal page in a new tab or window
   });
 }
-
 
 /*
 

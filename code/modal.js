@@ -45,11 +45,27 @@ function showModal(obj) {
             ${obj.description} <span>ITEM # ${obj.id}</span>
           </h1>
           <div class="stars">
-            <img src="../images/homepage_images/Star 1.png" alt="star" />
-            <img src="../images/homepage_images/Star 1.png" alt="star" />
-            <img src="../images/homepage_images/Star 1.png" alt="star" />
-            <img src="../images/homepage_images/Star 1.png" alt="star" />
-            <img src="../images/homepage_images/Star 1.png" alt="star" />
+            ${
+              obj.rating !== 0
+                ? Array.from(
+                    { length: 5 },
+                    (_, index) =>
+                      `<img
+                      src="../images/homepage_images/Star ${
+                        index < obj.rating ? 1 : 5
+                      }.png"
+                      alt="star"
+                    />`
+                  ).join("")
+                : Array.from(
+                    { length: 5 },
+                    () =>
+                      `<img
+                      src="../images/homepage_images/Star 5.png"
+                      alt="star"
+                    />`
+                  )
+            }
             <span>93 reviews</span>
           </div>
           <p>As low as</p>
@@ -60,16 +76,11 @@ function showModal(obj) {
             obj.color.length !== 0
               ? obj.color
                   .map((el) => {
-                    return `<div>${el}</div>`;
+                    return `<div class=${el}></div>`;
                   })
                   .join("")
               : `<div>No such product</div>`
           }
-            <div class="black"></div>
-            <div class="brown"></div>
-            <div class="blue"></div>
-            <div class="green"></div>
-            <div class="grey"></div>
           </div>
           <h2>Size:</h2>
           <div class="list size">
