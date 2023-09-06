@@ -268,7 +268,7 @@ div.checkbox {
 .cards {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-content: flex-start;
   flex-wrap: wrap;
   text-align: center;
   gap: 20px;
