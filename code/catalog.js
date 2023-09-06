@@ -303,12 +303,6 @@ for (let i = 0; i < catalog_cards.length; i++) {
   subnail_image = main_image.classList.add("subnail-image");
   main_image.classList.remove("subnail-image");
 
-let products = [];
-data.forEach((obj) => {
-  if (!products.includes(obj.type)) {
-    products.push(obj.type);
-  }
-});
 
 
 //catalog page, aside-container => product
@@ -318,10 +312,6 @@ sorted.forEach((el) => {
     ".dropdownlist.product .checkbox"
   ).innerHTML = `${sorted[el]}`;
 });
-
-//ціна
-const obj_price = document.getElementsByClassName("catalog_price");
-document.getElementsByClassName("price").innerHTML = `<p><span>${obj_price} hrv</span></p>`;
 
 //колір
 
